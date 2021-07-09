@@ -6,6 +6,7 @@ import './Map.scss'
 import 'leaflet/dist/leaflet.css'
 
 import MapEvents from './MapEvents'
+import IconMarker from './IconMarker'
 
 import { setCurrentLocation } from '../../redux/locationDucks'
 
@@ -50,7 +51,7 @@ const Map = () => {
           key={location._id} 
           position={location.latlng}
           eventHandlers={eventMarker}
-          
+          icon={IconMarker}
         >
           <Popup>
             {location.description}
