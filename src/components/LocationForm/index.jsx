@@ -37,7 +37,8 @@ const LocationForm = () => {
       onSubmit={handleSubmit(onSubmit)}
       onChange={handleChange}
     > 
-      <div className="location-form_inputs-container">
+      <label>
+        lat
         <input
           className="location-form_input-coord"
           {...register('latlng.lat')}
@@ -47,6 +48,9 @@ const LocationForm = () => {
           type="number"
           step='0.000000000000001'
         />
+      </label>
+      <label>
+        long
         <input
           className="location-form_input-coord"
           {...register('latlng.lng')}
@@ -56,12 +60,15 @@ const LocationForm = () => {
           type="number"
           step={0.000000000000001}
         />
-      </div>
-      <input
-        className="location-form_input-descrip"
-        {...register('description')}
-        required
-      />
+      </label>
+      <label>
+        descripción
+        <input
+          className="location-form_input-descrip"
+          {...register('description')}
+          required
+        />
+      </label>
       <button className="location-form_btn">
         CREAR
       </button>

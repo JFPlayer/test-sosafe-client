@@ -5,19 +5,22 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  overflow-y: scroll;
 }
 
 .results-item {
   background-color: rgb(240, 240, 240);
   border-radius: 5px;
+  padding: 5px;
   cursor: pointer;
 }
 
 .results-item_title {
   font-size: 1.2rem;
+  text-transform: capitalize;
 }
 
 .results-item_coords {
-  font-size: 1rem;
+  font-size: .9rem;
   
 }

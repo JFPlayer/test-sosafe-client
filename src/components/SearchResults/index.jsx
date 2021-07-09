@@ -26,7 +26,7 @@ const SearchResults = () => {
             {location.description}
           </div>
           <span className="results-item_coords">
-            {`Coordenadas: ${location.latlng.lat}, ${location.latlng.lng}`}
+            {`${location.latlng.lat}, ${location.latlng.lng}`}
           </span>
         </div>
       )}

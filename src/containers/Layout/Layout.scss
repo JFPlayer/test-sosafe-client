@@ -8,7 +8,7 @@
   &.disabled {
     
     .layout_panel {
-      left: -25%;
+      left: -30%;
     }
     .layout_map {
       left: 0;
@@ -22,7 +22,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 25%;
+  width: 30%;
   transition: all .5s;
   background-color: rgb(202, 202, 202);
 }
@@ -40,8 +40,8 @@
 .layout_map {
   position: absolute;
   top: 0;
-  left: 25%;
+  left: 30%;
   height: 100%;
-  width: 75%;
+  width: 70%;
   transition: all .5s;
 }
