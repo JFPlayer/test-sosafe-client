@@ -1,0 +1,47 @@
+
+.layout {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  &.disabled {
+    
+    .layout_panel {
+      left: -25%;
+    }
+    .layout_map {
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+.layout_panel {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 25%;
+  transition: all .5s;
+  background-color: rgb(202, 202, 202);
+}
+
+.panel_btn-drop-down {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 40px;
+  height: 60px;
+  transform: translate(100%, -50%);
+  z-index: 1000;
+}
+
+.layout_map {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  height: 100%;
+  width: 75%;
+  transition: all .5s;
+}

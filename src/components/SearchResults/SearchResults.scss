@@ -1,0 +1,23 @@
+
+
+.search-results {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.results-item {
+  background-color: rgb(240, 240, 240);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.results-item_title {
+  font-size: 1.2rem;
+}
+
+.results-item_coords {
+  font-size: 1rem;
+  
+}
